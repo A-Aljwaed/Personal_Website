@@ -8,32 +8,51 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+
+
+
+const openProject = (url) => {
+  window.open(url, '_blank'); 
+}
+
+
 export const Projects = () => {
 
   const projects = [
     {
+      
       title: "non-profit-org",
       description: "Backend-Domane",
       imgUrl: projImg1,
+      projectUrl:"https://github.com/A-Aljwaed/supporting-sp",
+      
+      
     },
+    
     {
       title: "Personal-blog",
       description: "Development & implementatin",
       imgUrl: projImg2,
+      projectUrl: "https://blog.aljwaed.de",
     },
     {
+
       title: "warehouse management",
       description: "Development and Domane Designe",
       imgUrl: projImg3,
+      projectUrl: "https://github.com/A-Aljwaed/Lagermanager/tree/main/Siehle",
     },
 <p></p>,
     {
       title: "Coding for All",
       description: "Development and hosting",
       imgUrl: projImg4,
+      projectUrl:"https://code4all.aljwaed.de"
     }
+    
 
   ];
+
 
   return (
     <section className="project" id="projects">
@@ -66,10 +85,12 @@ export const Projects = () => {
                               <ProjectCard
                                 key={index}
                                 {...project}
+                               
                                 />
                             )
                           })
-                        }
+                           }
+                        
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
@@ -87,5 +108,6 @@ export const Projects = () => {
       </Container>
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
+    
   )
 }

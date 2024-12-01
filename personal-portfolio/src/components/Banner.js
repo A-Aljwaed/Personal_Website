@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/sitting_oerson_2.svg";
@@ -49,7 +50,7 @@ export const Banner = () => {
 
   const handleClick = () => {
 
-    window.open('https://blog.aljwaed.de', '_blank'); 
+    window.open('https://code4all.aljwaed.de', '_blank'); 
   };
 
   return (
@@ -61,7 +62,7 @@ export const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>{`Hi , iam Ahmad`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "JAVA Developer", "Web Developer", "Domane driven Designer" ]'>
+                  <h1>Hi , iam Ahmad <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "JAVA Developer", "Web Developer", "Domane driven Designer" ]'>
                     <span className="wrap">{text}</span>
                   </span></h1>
                   <p>Programming is not just about writing code; it’s about solving problems and creating possibilities.</p>
@@ -83,4 +84,4 @@ export const Banner = () => {
       </Container>
     </section>
   )
-}
+}    

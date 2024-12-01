@@ -15,11 +15,18 @@ export const Footer = () => {
             
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
-            <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
-            </div>
+          <div className="social-icon">
+              <a href="#" onClick={() => (window.location.href = 'https://de.linkedin.com/in/ahmad-aljwaed-3512362b9')}>
+  <img src={navIcon1} alt="LinkedIn" />
+</a>
+<a href="#" onClick={() => (window.location='https://github.com/A-Aljwaed')}>
+  <img src={navIcon3} alt="GitHub" />
+</a>
+
+<a href="#" onClick={() => (window.location='https://facebook.com/Ahmed-jowed')}>
+  <img src={navIcon2} alt="Facebook" />
+</a>
+              </div>
             
           </Col>
         </Row>

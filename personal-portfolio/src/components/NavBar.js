@@ -48,9 +48,16 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+              <a href="#" onClick={() => (window.location.href = 'https://www.linkedin.com/in/ahmad-aljwaed')}>
+  <img src={navIcon1} alt="LinkedIn" />
+</a>
+<a href="#" onClick={() => (window.location='https://github.com/A-Aljwaed')}>
+  <img src={navIcon3} alt="GitHub" />
+</a>
+
+<a href="#" onClick={() => (window.location='https://facebook.com/Ahmed-jowed')}>
+  <img src={navIcon2} alt="Facebook" />
+</a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Conntact</span></button>
